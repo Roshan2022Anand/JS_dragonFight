@@ -1,3 +1,65 @@
-body{
-    background-color: black;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
 }
+body{
+    background-color: #454242;
+}
+header{
+    text-align: center;
+    color: #191919;
+    font-size: 40px;
+    font-weight: bolder;
+}
+main{
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px;
+    border:2px solid black;
+}
+main section {
+    display: flex;
+}
+#stats{
+    background-color: aliceblue;
+    border-bottom:1px solid #191919;
+    display: flex;
+    justify-content: center;
+}
+.stat-info{
+    margin: 5px 0;
+    width: 20%;
+    display: flex;
+}
+#btn-section{
+    background-color: aliceblue;
+}
+.btns{
+    margin: 2px 0 2px 35px;
+    background-color: yellow;
+    border: 3px solid rgba(192, 192, 10, 0.767);
+    border-radius: 5px;
+}
+.btns:hover{
+    background-color: #CC0000;
+    position: relative;
+    top:3px;
+    z-index: 99;
+}
+#discription{
+    flex-direction: column;
+    background-color: #191919;
+    color: white;
+}
+#place{
+    margin: 5px 0 0 10px;
+    font-size: 25px;
+}
+#current-info{
+    margin: 5px;
+}
+/* Primary: #191919 (Dark Charcoal)
+Secondary: #FFFFFF (White)
+Accent: #CC0000 (Fire Red) */
