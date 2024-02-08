@@ -17,6 +17,7 @@ main{
     margin: 10px auto;
     width: 80%;
     max-width: 600px;
+    min-width: 500px;
     border:10px solid white;
 }
 main section {
@@ -26,7 +27,7 @@ main section {
     background-color: aliceblue;
     border:1px solid #191919;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .stat-info{
     margin: 5px 0;
@@ -60,6 +61,29 @@ main section {
 }
 #current-info{
     margin: 5px;
+}
+.alert{
+    animation-name: alert;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+}
+@keyframes alert{
+    0%{
+        font-size: 30px;
+        position: absolute;
+        color: #CC0000;
+    }
+    50%{
+        font-size: 35px;
+        position: absolute;
+        color: #CC0000;
+    }
+    100%{
+        position: absolute;
+        font-size: 20px;
+        font-size: 20px;
+        color: #191919;
+    }
 }
 /* Primary: #191919 (Dark Charcoal)
 Secondary: #FFFFFF (White)
