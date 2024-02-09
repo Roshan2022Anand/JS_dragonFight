@@ -38,7 +38,7 @@ main section {
     background-color: aliceblue;
 }
 .btns{
-    margin: 2px 0 2px 35px;
+    margin: 10px 0 10px 35px;
     background-color: yellow;
     border: 3px solid rgba(192, 192, 10, 0.767);
     border-radius: 5px;
@@ -62,6 +62,14 @@ main section {
 #current-info{
     margin: 5px;
 }
+#demon-stats{
+    display: none;
+    margin: 5px;
+    background-color: #CC0000;
+}
+#demon-stats *{
+    margin-left: 10px;
+}
 .alert{
     animation-name: alert;
     animation-duration: 500ms;
@@ -69,18 +77,18 @@ main section {
 }
 @keyframes alert{
     0%{
-        font-size: 30px;
+        transform:scale(1.5);
         position: absolute;
         color: #CC0000;
     }
     50%{
-        font-size: 35px;
+        transform: scale(2);
         position: absolute;
         color: #CC0000;
     }
     100%{
+        transform: scale(1);
         position: absolute;
-        font-size: 20px;
         font-size: 20px;
         color: #191919;
     }
